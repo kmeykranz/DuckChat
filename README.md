@@ -1,4 +1,4 @@
-# ChatApp
+# DuckChat
 A simple chat app based on Tcp network made with C++ and Qt.\
 用C++和Qt做的简单的Tcp服务器通信程序
 ### 示例
