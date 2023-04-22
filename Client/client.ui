@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Client</class>
+ <widget class="QWidget" name="Client">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>380</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>380</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Client</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+border: none;
+}
+QLineEdit {
+      border: 0.5px solid rgb(147, 150, 154);
+      border-radius: 6px;
+      background-color: rgba(40, 44, 52,150);
+      min-width: 80px;
+	  font-family: &quot;Microsoft YaHei&quot;;
+	  font-size:11pt;
+	  font-weight: bold;
+	  color:rgb(147, 150, 154);
+  }</string>
+  </property>
+  <widget class="QLineEdit" name="ip">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei</family>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>IP地址</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="port">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>10</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>Port端口</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="connectButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>10</y>
+     <width>62</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+      border: 0.5px solid white;
+      border-radius: 6px;
+      background-color: rgb(90,194,198);
+      min-width: 60px;
+	  font-family: &quot;Microsoft YaHei&quot;;
+	  font-size:10pt;
+	  font-weight: bold;
+	  color:white;
+  }
+ QPushButton:hover {
+	border: 0.5px solid white;
+      border-radius: 6px;
+      background-color: #1fab89;
+      min-width: 60px;
+	  font-family: &quot;Microsoft YaHei&quot;;
+	  font-size:9pt;
+	  font-weight: bold;
+	  color:white;
+ }</string>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="receive">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>361</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {
+      border: 0.5px solid rgb(147, 150, 154);
+      border-radius: 6px;
+      background-color: rgba(40, 44, 52, 150);
+      min-width: 80px;
+	  font-family: &quot;Microsoft YaHei&quot;;
+	  font-size:11pt;
+	  font-weight: bold;
+	  color:rgb(215, 215, 215);
+  }</string>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendButton">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>340</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+      border: 0.5px solid white;
+      border-radius: 6px;
+      background-color: rgb(90,194,198);
+      min-width: 50px;
+	  font-family: &quot;Microsoft YaHei&quot;;
+	  font-size:11pt;
+	  font-weight: bold;
+	  color:white;
+  }
+ QPushButton:hover {
+	border: 0.5px solid white;
+      border-radius: 6px;
+      background-color: #1fab89;
+      min-width: 50px;
+	  font-family: &quot;Microsoft YaHei&quot;;
+	  font-size:10pt;
+	  font-weight: bold;
+	  color:white;
+ }</string>
+   </property>
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nameEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="placeholderText">
+    <string>显示名称</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="send">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>271</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+color:rgb(215, 215, 215);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>381</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	border-image: url(:/Images/duckl.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>70</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+color:rgb(147, 150, 154);
+}</string>
+   </property>
+   <property name="text">
+    <string>开发者:Kevinwu  Github:kevinwu06</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>ip</zorder>
+  <zorder>port</zorder>
+  <zorder>connectButton</zorder>
+  <zorder>receive</zorder>
+  <zorder>sendButton</zorder>
+  <zorder>nameEdit</zorder>
+  <zorder>send</zorder>
+  <zorder>label_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

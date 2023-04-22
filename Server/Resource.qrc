@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/duckl.png</file>
+    </qresource>
+</RCC>
