@@ -1,11 +1,13 @@
 # DuckChat
 A simple chat app based on Tcp network made with C++ and Qt.\
-用C++和Qt做的简单的Tcp服务器通信程序
+用C++和Qt做的简单的Tcp服务器通信程序\
+
+我用的Qt版本: 6.2.4
 
 ### 示例
-[B站视频演示视频](https://www.bilibili.com/video/BV1pg4y177y4/?spm_id_from=333.880.my_history.page.click&vd_source=b76bdd11d4d20577d62ab093f32f315a) \
+[B站视频演示视频](https://www.bilibili.com/video/BV1pg4y177y4/?spm_id_from=333.880.my_history.page.click&vd_source=b76bdd11d4d20577d62ab093f32f315a) 
 
-<img src="https://bed.kevinwu.cc/img/duckchat.webp" style="zoom:40%;" />
+<img src="https://bed.kevinwu.cc/img/duckchat.webp" style="zoom:30%;" />
 
 ### 方法
 
